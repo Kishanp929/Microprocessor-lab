@@ -1,0 +1,102 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    02/12/2023  12:24:51  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\MIDSEM_JALCIPHER.obj TO .\Objects\midsem_jalcipher PRINT (.\Listings\midsem_jalcip
+>> her.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\MIDSEM_JALCIPHER.obj (MIDSEM_JALCIPHER)
+
+
+LINK MAP OF MODULE:  .\Objects\midsem_jalcipher (MIDSEM_JALCIPHER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0171H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\midsem_jalcipher (MIDSEM_JALCIPHER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MIDSEM_JALCIPHER
+  D:00F0H         SYMBOL        B
+  N:00ADH         SYMBOL        E
+  C:0133H         SYMBOL        FINDD
+  C:0108H         SYMBOL        HERE
+  C:0146H         SYMBOL        JUMP1
+  C:0166H         SYMBOL        JUMP4
+  C:0146H         SYMBOL        JUMP56
+  C:016EH         SYMBOL        JUMP6
+  C:016EH         SYMBOL        JUMP7
+  C:0135H         SYMBOL        JUMP99
+  C:016EH         SYMBOL        JUMPUL
+  C:0100H         SYMBOL        MAIN
+  D:0090H         SYMBOL        P1
+  C:0146H         SYMBOL        PINKY
+  N:0013H         SYMBOL        PRIMES_P
+  N:000DH         SYMBOL        Q
+  C:0000H         LINE#         2
+  C:0100H         LINE#         8
+  C:0103H         LINE#         9
+  C:0106H         LINE#         10
+  C:0108H         LINE#         12
+  C:0130H         LINE#         16
+  C:0133H         LINE#         18
+  C:0135H         LINE#         21
+  C:0137H         LINE#         22
+  C:0139H         LINE#         23
+  C:013BH         LINE#         25
+  C:013CH         LINE#         26
+  C:013DH         LINE#         27
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  02/12/2023  12:24:51  PAGE 2
+
+
+  C:013FH         LINE#         28
+  C:0140H         LINE#         29
+  C:0142H         LINE#         30
+  C:0144H         LINE#         31
+  C:0146H         LINE#         36
+  C:0147H         LINE#         37
+  C:0148H         LINE#         38
+  C:0149H         LINE#         39
+  C:014AH         LINE#         40
+  C:014CH         LINE#         41
+  C:014EH         LINE#         43
+  C:014FH         LINE#         44
+  C:0151H         LINE#         45
+  C:0153H         LINE#         46
+  C:0155H         LINE#         47
+  C:0156H         LINE#         48
+  C:0158H         LINE#         50
+  C:0159H         LINE#         51
+  C:015BH         LINE#         52
+  C:015CH         LINE#         53
+  C:015EH         LINE#         54
+  C:0160H         LINE#         55
+  C:0162H         LINE#         56
+  C:0164H         LINE#         58
+  C:0166H         LINE#         65
+  C:0168H         LINE#         66
+  C:0169H         LINE#         67
+  C:016BH         LINE#         68
+  C:016EH         LINE#         72
+  C:0170H         LINE#         73
+  -------         ENDMOD        MIDSEM_JALCIPHER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004EH BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=369
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

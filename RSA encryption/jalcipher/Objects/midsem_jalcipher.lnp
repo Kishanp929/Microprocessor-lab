@@ -1,0 +1,3 @@
+".\Objects\MIDSEM_JALCIPHER.obj" 
+TO ".\Objects\midsem_jalcipher" 
+PRINT(".\Listings\midsem_jalcipher.m51") RAMSIZE(256) 

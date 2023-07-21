@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\lab7.obj" 
+TO ".\Objects\Lab_7_keyboard" 
+PRINT(".\Listings\Lab_7_keyboard.m51") RAMSIZE(256) 

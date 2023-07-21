@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\Algo_Thomass.obj" 
+TO ".\Objects\Algorithm_Thomas" 
+PRINT(".\Listings\Algorithm_Thomas.m51") RAMSIZE(256) 

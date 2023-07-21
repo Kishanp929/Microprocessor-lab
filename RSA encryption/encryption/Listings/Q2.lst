@@ -1,0 +1,72 @@
+A51 MACRO ASSEMBLER  Q2                                                                   02/12/2023 11:59:12 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Q2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Q2.asm SET(SMALL) DEBUG PRINT(.\Listings\Q2.lst) OBJECT(.\Objects\Q2.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0H
+0000 020100            2     LJMP MAIN
+0100                   3     ORG 100H
+0100                   4     MAIN:
+0100 3149              5     ACALL MUL168
+0102 3130              6     ACALL FINDM
+0104 80FE              7     HERE:SJMP HERE
+0130                   8     ORG 130H
+                       9     
+0130                  10     FINDM:
+                      11     
+0130 7C7F             12     MOV R4 , #127  
+0132 757306           13     MOV 73H , #06H
+0135 757406           14     MOV 74H , #06H
+0138                  15     JUMP0:
+                      16     
+0138 3149             17     ACALL MUL168
+013A E575             18     MOV A , 75H
+013C 75F0F7           19     MOV B , #247
+013F 84               20     DIV AB
+0140 85F076           21     MOV 76H , B
+0143 85F073           22     MOV 73H , B
+0146 DCF0             23     DJNZ R4 , JUMP0
+0148 22               24     RET
+                      25     
+0149                  26     MUL168:
+0149 E573             27     MOV A , 73H
+014B 8575F0           28     MOV B , 75H
+014E A4               29     MUL AB
+014F F573             30     MOV 73H , A
+0151 8575F0           31     MOV B , 75H
+0154 E574             32     MOV A , 74H
+0156 A4               33     MUL AB
+0157 F574             34     MOV 74H , A
+0159 E5F0             35     MOV A , B
+015B 2573             36     ADD A , 73H
+015D F573             37     MOV 73H , A
+015F 22               38     RET
+                      39     
+0160 22               40     RET
+                      41     END
+                             
+A51 MACRO ASSEMBLER  Q2                                                                   02/12/2023 11:59:12 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+FINDM. . . . . . .  C ADDR   0130H   A   
+HERE . . . . . . .  C ADDR   0104H   A   
+JUMP0. . . . . . .  C ADDR   0138H   A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+MUL168 . . . . . .  C ADDR   0149H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

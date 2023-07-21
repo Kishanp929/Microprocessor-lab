@@ -1,0 +1,126 @@
+A51 MACRO ASSEMBLER  MIDSEM_JALCIPHER                                                     02/12/2023 12:24:51 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\MIDSEM_JALCIPHER.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE MIDSEM_JALCIPHER.asm SET(SMALL) DEBUG PRINT(.\Listings\MIDSEM_JALCIPHER
+                      .lst) OBJECT(.\Objects\MIDSEM_JALCIPHER.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0H
+0000 020100            2     LJMP MAIN
+0100                   3     ORG 100H
+0100                   4     MAIN:
+  0013                 5     PRIMES_P EQU 19
+  000D                 6     Q EQU 13
+  00AD                 7     E EQU 173       
+0100 7570F7            8     MOV 70H , #0F7H
+0103 7571D8            9     MOV 71H , #0D8H
+0106 3133             10     ACALL FINDD
+                      11     
+0108 80FE             12     HERE:SJMP HERE
+0130                  13     ORG 130H
+                      14     
+                      15     
+0130 759007           16     MOV P1 , #07H
+0133                  17     FINDD:
+0133 7A00             18     MOV R2 , #00H
+0135                  19     JUMP99:
+                      20     
+0135 7BAD             21     MOV R3 ,  #0ADH    
+0137 7CD8             22     MOV R4 , #0D8H    
+0139 7D00             23     MOV R5 , #00H
+                      24     
+013B 0A               25     INC R2
+013C EC               26     MOV A , R4
+013D 8AF0             27     MOV B , R2
+013F A4               28     MUL AB
+0140 2401             29     ADD A ,#01
+0142 5002             30     JNC JUMP56
+0144 05F0             31     INC B
+0146                  32     JUMP56:
+0146                  33     PINKY:
+                      34     
+0146                  35     JUMP1:
+0146 C3               36     CLR C
+0147 0D               37     INC R5
+0148 FC               38     MOV R4 , A
+0149 9B               39     SUBB A , R3
+014A 6022             40     JZ JUMP6
+014C 50F8             41     JNC JUMP1
+                      42     
+014E C3               43     CLR C
+014F E5F0             44     MOV A , B
+0151 9401             45     SUBB A , #01H
+0153 F5F0             46     MOV B , A
+0155 EC               47     MOV A , R4
+0156 400E             48     JC JUMP4
+                      49     
+0158 EC               50     MOV A , R4
+0159 94AD             51     SUBB A ,#0ADH
+015B C3               52     CLR C
+015C F5F0             53     MOV B , A
+015E 74FF             54     MOV A , #0FFH
+0160 95F0             55     SUBB A , B
+0162 2401             56     ADD A, #01H
+                      57     
+A51 MACRO ASSEMBLER  MIDSEM_JALCIPHER                                                     02/12/2023 12:24:51 PAGE     2
+
+0164 80E0             58     SJMP PINKY
+0166                  59     JUMP4:
+                      60     
+                      61     
+                      62     
+                      63     
+                      64     
+0166 740E             65      MOV A , #14
+0168 9D               66      SUBB A, R5
+0169 4003             67      JC JUMPUL
+016B 020135           68     LJMP JUMP99
+016E                  69     JUMP7:
+016E                  70     JUMP6:
+016E                  71     JUMPUL:
+016E 8D72             72     MOV 72H , R5
+0170 22               73     RET
+                      74     
+                      75     
+                      76     
+                      77     
+                      78     
+                      79     
+                      80     
+                      81     
+                      82     
+                      83     
+                      84     END
+A51 MACRO ASSEMBLER  MIDSEM_JALCIPHER                                                     02/12/2023 12:24:51 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+E. . . . . . . . .  N NUMB   00ADH   A   
+FINDD. . . . . . .  C ADDR   0133H   A   
+HERE . . . . . . .  C ADDR   0108H   A   
+JUMP1. . . . . . .  C ADDR   0146H   A   
+JUMP4. . . . . . .  C ADDR   0166H   A   
+JUMP56 . . . . . .  C ADDR   0146H   A   
+JUMP6. . . . . . .  C ADDR   016EH   A   
+JUMP7. . . . . . .  C ADDR   016EH   A   
+JUMP99 . . . . . .  C ADDR   0135H   A   
+JUMPUL . . . . . .  C ADDR   016EH   A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+PINKY. . . . . . .  C ADDR   0146H   A   
+PRIMES_P . . . . .  N NUMB   0013H   A   
+Q. . . . . . . . .  N NUMB   000DH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
